@@ -88,7 +88,12 @@ header {
   justify-content: center;
   align-items: center;
   display: flex;
-  transition: height 0.5s ease;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform 0.5s ease, height 0.5s ease;
+}
+.active-popup {
+  transform: scale(1);
 }
 .active {
   height: 450px;
